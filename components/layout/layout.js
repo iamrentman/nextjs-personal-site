@@ -6,7 +6,7 @@ import Link from 'next/link'
 const name = 'Justin Rent,\nDev & Design'
 export const siteTitle = 'Next.js Sample Website'
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home, contentClass }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -23,13 +23,15 @@ export default function Layout({ children, home }) {
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
+        <link href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></link>
       </Head>
       <header className={styles.header}>
         {home ? (
           <>
             <img
-              src="/images/profile.jpg"
-              className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
+              src="/images/justinX2gray.png"
+              className={`${styles.headerHomeImage}`}
               alt={name}
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
@@ -39,8 +41,8 @@ export default function Layout({ children, home }) {
             <Link href="/">
               <a>
                 <img
-                  src="/images/profile.jpg"
-                  className={`${styles.headerImage} ${utilStyles.borderCircle}`}
+                  src="/images/justinX2gray.png"
+                  className={`${styles.headerImage}`}
                   alt={name}
                 />
               </a>
@@ -53,7 +55,7 @@ export default function Layout({ children, home }) {
           </>
         )}
       </header>
-      <main>{children}</main>
+      <main className={contentClass}>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/">
