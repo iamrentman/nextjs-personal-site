@@ -48,10 +48,13 @@ html {
  */
 
 body {
-  // @include body-xxsmall;
   font-size: 18px;
   margin: 0;
   color: $color-night-sky;
+
+  @media (prefers-color-scheme: dark) {
+    color: $color-white;
+  }
 }
 
 /**

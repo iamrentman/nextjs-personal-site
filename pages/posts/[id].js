@@ -4,8 +4,8 @@ import Date from '../../components/date/date'
 import { getAllContentIds, getContentData } from '../../lib/posts'
 import utilStyles from '../../global/utils.module.scss'
 
-
 export default function Post({ contentData }) {
+  console.log(contentData);
   return (
     <Layout>
       <Head>
