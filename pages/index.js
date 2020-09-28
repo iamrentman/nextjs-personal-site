@@ -24,7 +24,10 @@ export default function Home({ allContentData }) {
         <p>Finally reworking my personal website with Next.js! Stay tuned.</p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <Link href="resume" as={`/resume`}>
+         <h2 className={utilStyles.headingLg}><a>Resumé</a></h2>
+        </Link>
+        <h2 className={utilStyles.headingLg}>Blog Posts</h2>
         <ul className={utilStyles.list}>
           {allContentData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>

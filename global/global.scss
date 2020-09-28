@@ -7,8 +7,13 @@ body {
   font-family: 'Literata', serif;
   line-height: 1.6;
   font-size: 18px;
-  background: $color-night-sky;
-  color: $color-white;
+  background: $color-white;
+  color: $color-night-sky;
+
+  @media (prefers-color-scheme: dark) {
+    background: $color-night-sky;
+    color: $color-white;
+  }
 }
 
 * {
@@ -27,4 +32,9 @@ a:hover {
 img {
   max-width: 100%;
   display: block;
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
 }
