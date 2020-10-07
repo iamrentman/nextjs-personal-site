@@ -3,6 +3,8 @@ import Layout from '../../components/layout/layout'
 import Date from '../../components/date/date'
 import { getAllContentIds, getContentData } from '../../lib/posts'
 import utilStyles from '../../global/utils.module.scss'
+import postStyles from '../../global/posts.module.scss'
+
 
 export default function Post({ contentData }) {
   console.log(contentData);
@@ -13,10 +15,10 @@ export default function Post({ contentData }) {
       </Head>
       <article>
         <h1 className={utilStyles.headingXl}>{contentData.title}</h1>
-        <div className={utilStyles.lightText}>
+        <div className={postStyles.date}>
           <Date dateString={contentData.date} />
         </div>
-        <div dangerouslySetInnerHTML={{ __html: contentData.contentHtml }} />
+        <div className={postStyles.content} dangerouslySetInnerHTML={{ __html: contentData.contentHtml }} />
       </article>
     </Layout>
   )

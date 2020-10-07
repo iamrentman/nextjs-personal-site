@@ -3,7 +3,7 @@ import styles from './layout.module.scss'
 import utilStyles from '../../global/utils.module.scss'
 import Link from 'next/link'
 
-const name = 'Justin Rent,\nDev & Design'
+const name = 'Justin Rent,\nDeveloper & Designer'
 export const siteTitle = 'Justin Rent, Dev & Design'
 
 export default function Layout({ children, home, contentClass }) {
@@ -24,7 +24,6 @@ export default function Layout({ children, home, contentClass }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
         <link href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet"></link>
-        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></link>
       </Head>
       <header className={styles.header}>
         {home ? (

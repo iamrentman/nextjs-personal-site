@@ -1,0 +1,91 @@
+@import './init';
+
+.date {
+  margin-bottom: 0.8rem;
+  font-size: 0.8rem;
+  letter-spacing: .08rem;
+  text-transform: uppercase;
+}
+
+.content {
+  // @include body-medium;
+  grid-area: text;
+  position: relative;
+  margin: auto;
+
+  // The below consists of naked elements as this component
+  // includes WYSIWYG content from editors.
+  // h2 {
+  //   @include title-large;
+  //   margin-bottom: 16px;
+  // }
+
+  // h3 {
+  //   @include title-medium;
+  // }
+
+  // h4 {
+  //   @include title-small;
+  // }
+
+  // h5 {
+  //   @include title-xsmall;
+  // }
+
+  // h6 {
+  //   @include title-xxsmall;
+  // }
+
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 8px;
+  }
+
+  p {
+    // @include body-medium;
+    margin-bottom: 28px;
+
+    @include breakpoint($bp-tablet) {
+      margin-bottom: 32px;
+    }
+
+    @include breakpoint($bp-desktop) {
+      margin-bottom: 40px;
+    }
+  }
+
+  a {
+    font-weight: bold;
+    // color: var(--color-pa-link);
+  }
+
+  ul,
+  li {
+    margin-bottom: 28px;
+
+    @include breakpoint($bp-tablet) {
+      margin-bottom: 32px;
+    }
+
+    @include breakpoint($bp-desktop) {
+      margin-bottom: 40px;
+    }
+  }
+
+  ul li {
+    list-style: inside;
+    list-style-type: disc;
+  }
+
+  ol li {
+    list-style: inside;
+    list-style-type: decimal;
+  }
+
+  ul li,
+  ol li {
+    margin-bottom: 12px;
+  }
+}

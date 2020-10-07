@@ -5,7 +5,7 @@
   margin: auto;
   padding: 16px 24px;
   border-radius: 8px;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Literata', serif;
   letter-spacing: -0.0125rem;
 
   a {
@@ -20,7 +20,6 @@
 
 .pageTitle {
   margin: 0;
-  font-family: 'Literata', serif;
   font-weight: 900;
   font-size: 2.5rem;
   letter-spacing: 0;
@@ -51,12 +50,6 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
-
-  // Lists of "Positions:" are italic.
-  .positionHeading + & {
-    font-weight: 600;
-    margin-bottom: .75rem;
   }
 
   .description + & {
@@ -96,4 +89,10 @@
 
 .job {
   margin-bottom: 1.5rem;
+}
+
+.jobTitles {
+  margin-bottom: .75rem;
+  font-style: italic;
+  font-weight: 700;
 }
