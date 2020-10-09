@@ -48,7 +48,7 @@ html {
  */
 
 body {
-  font-size: 18px;
+  font-size: calc(100% + 0.2vw);
   margin: 0;
   color: $color-night-sky;
 

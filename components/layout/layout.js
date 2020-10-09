@@ -10,6 +10,16 @@ export default function Layout({ children, home, contentClass }) {
   return (
     <div className={styles.container}>
       <Head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-28730813-2"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'UA-28730813-2');`
+          }}
+        />
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
@@ -28,24 +38,10 @@ export default function Layout({ children, home, contentClass }) {
       <header className={styles.header}>
         {home ? (
           <>
-            <img
-              src="/images/justinX2gray.png"
-              className={`${styles.headerHomeImage}`}
-              alt={name}
-            />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
         ) : (
           <>
-            <Link href="/">
-              <a>
-                <img
-                  src="/images/justinX2gray.png"
-                  className={`${styles.headerImage}`}
-                  alt={name}
-                />
-              </a>
-            </Link>
             <h2 className={utilStyles.headingLg}>
               <Link href="/">
                 <a className={utilStyles.colorInherit}>{name}</a>

@@ -21,23 +21,20 @@ export default function Home({ allContentData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Finally reworking my personal website with Next.js! Stay tuned.</p>
+        <p>Finally reworking my personal website with Next.js! Check out my <Link href="resume">resume</Link> here or read some updates below.</p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <Link href="resume" as={`/resume`}>
-         <h2 className={utilStyles.headingLg}><a>Resumé</a></h2>
-        </Link>
         <h2 className={utilStyles.headingLg}>Blog Posts</h2>
         <ul className={utilStyles.list}>
           {allContentData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
+              <small className={utilStyles.date}>
+                <Date dateString={date} />
+              </small>
+              <br />
               <Link href="/posts/[id]" as={`/posts/${id}`}>
                 <a>{title}</a>
               </Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
             </li>
           ))}
         </ul>
