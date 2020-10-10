@@ -1,11 +1,10 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout, { siteTitle } from '../components/layout/layout'
+import Layout from '../components/layout/layout'
 import Contact from '../data/resume/contact.mdx'
 import Experience from '../data/resume/experience.mdx'
 import styles from '../components/resume/resume.module.scss'
 import {MDXProvider} from '@mdx-js/react'
-import classnames from 'classnames'
 
 const h1 = props => <h1 className={styles.pageTitle} {...props} />
 const h2 = props => <h2 className={styles.sectionHeading} {...props} />
@@ -27,7 +26,10 @@ const components = {
 
 export default function Resume() {
   return (
-    <Layout contentClass={styles.resumeWrapper}>
+    <Layout resume contentClass={styles.resumeWrapper}>
+      <Head>
+        <title>Justin Rent, Developer & Designer — Resumé</title>
+      </Head>
       <MDXProvider components={components}>
         <section className={styles.contact}>
           <Contact />

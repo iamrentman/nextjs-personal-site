@@ -1,15 +1,37 @@
+@import '../../global/init';
+
+// .container {
+//   max-width: 1440px;
+//   padding: 0 1rem;
+//
+// }
 .container {
-  max-width: 1440px;
-  padding: 0 1rem;
+  display: grid;
+  grid-template-columns:
+    1fr
+    calc(min(65ch, 100%))
+    1fr;
   margin: 3rem auto 6rem;
+  padding: 0 1rem;
+  max-width: 1400px;
+
+  > * {
+    grid-column: 2;
+  }
 }
 
 .header {
-  display: flex;
-  justify-content: center;
-  // flex-direction: column;
-  // align-items: center;
   margin-bottom: 2rem;
+  width: 100%;
+  text-align: left;
+
+  @include breakpoint($bp-tablet) {
+    text-align: center;
+  }
+
+  @include breakpoint($bp-desktop) {
+    grid-column: 1 / 4;
+  }
 }
 
 .headerImage {
@@ -27,3 +49,49 @@
 .backToHome {
   margin: 3rem 0 0;
 }
+
+.footer {
+  display: block;
+  margin-top: 3rem;
+  padding: 2rem 0;
+  border-top: 1px solid;
+
+  @include breakpoint($bp-tablet) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.copyright {
+  margin-bottom: 1rem;
+}
+
+.iconList {
+  flex: 2;
+
+  > * {
+    display: inline-block;
+    margin-right: 15px;
+    vertical-align: top;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+.iconSocial {
+  width: 30px;
+  height: 30px;
+  fill: $color-white;
+}
+
+.iconLinkedIn {
+  width: 35px;
+  height: 35px;
+}
+
+.iconText {
+  @include visually-hidden;
+}
+
+
