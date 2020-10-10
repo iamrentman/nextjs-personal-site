@@ -109,7 +109,7 @@ export default function Layout({ children, home, contentClass }) {
             </a>
           </li>
         </ul>
-        <small className={styles.copyright}>Copyright {year}, Justin Rent</small>
+        <small className={styles.copyright}>© {year} Justin Rent</small>
       </footer>
     </div>
   )

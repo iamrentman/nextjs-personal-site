@@ -21,7 +21,7 @@ export default function Home({ allContentData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>I'm finally reworking my personal website with Next.js! Things are pretty basic right now, but I've got plans. For now, check out my resumé <Link href="resume">here</Link> or read some updates below.</p>
+        <p>I'm excited to be reworking my personal website with Next.js! Things are pretty basic right now, but I've got big plans. For the time being you can read a bit <Link href="about">about me</Link>, learn more about my <Link href="resume">professional experience</Link>, or read some updates below. If you'd like to connect, you can also find me on <a href="https://www.linkedin.com/in/jrentdesign/">LinkedIn</a>, <a href="https://www.dribbble.com/iamrentman">Dribbble</a>, or <a href="https://www.twitter.com/iamrentman">Twitter</a>.</p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog Posts</h2>
