@@ -32,7 +32,7 @@ export default function Resume() {
         <title>Justin Rent, Developer & Designer — Resumé</title>
       </Head>
       <h1 className={utilStyles.headingXl}>Professional Background</h1>
-      <p className={styles.intro}>I am a developer & designer with an MBA who is inspired by big ideas, meaningful projects, meticulous user-centered design, and the collaborative nature of diverse, inclusive, open source focused development teams.</p>
+      <p className={styles.intro}>I am a Developer & Designer with an MBA who is inspired by big ideas, meaningful projects, meticulous user-centered design, and the collaborative nature of diverse, inclusive, open source focused development teams.</p>
       <p className={styles.intro}>My professional career is rooted in design with a constant curiosity for technology and an interest in improving business. As a developer, I've found a sweet spot where I'm well equipped to collaborate closely with strategists and designers to ensure that their work is accurately translated to the browser and results in engaging user experiences. Day-to-day, modern development tools and the development team workflow are where I find myself most engaged.</p>
       <h2 className={styles.sectionHeading}>Technical Abilities:</h2>
       <p className={styles.intro}>React, Javascript, jQuery, Sass/CSS/CSS-in-JS/BEM/SMACSS, HTML/JSX/MDX, Twig, GraphQL, Gulp, Node, Drupal, decoupled architecture, Gatsby, Next.js, Storybook, Pattern Lab, KSS Node, Jest, Git, DDEV/LAMP, PHP, WordPress, VS Code, Adobe Creative Cloud apps, Sketch, InVision, Abstract</p>

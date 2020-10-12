@@ -1,21 +1,18 @@
 @import '../../global/init';
 
 .resumeWrapper {
-  max-width: 1080px;
-  margin: auto;
   padding: 16px 24px;
   border-radius: 8px;
-  font-family: 'Literata', serif;
   letter-spacing: -0.0125rem;
 
-  // a {
-  //   color: $color-dark-water;
-  // }
+  a {
+    color: $color-dark-water;
+  }
 
-  // @media (prefers-color-scheme: dark) {
-  //   background: $color-white;
-  //   color: $color-night-sky;
-  // }
+  @media (prefers-color-scheme: dark) {
+    background: $color-white;
+    color: $color-night-sky;
+  }
 }
 
 .pageTitle {
