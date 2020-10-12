@@ -25,6 +25,10 @@
   letter-spacing: 0;
 }
 
+.intro {
+  margin-bottom: 1.5rem;
+}
+
 .sectionHeading {
   font-family: 'Literata', serif;
   font-size: 2rem;
@@ -43,6 +47,15 @@
 
 .positionHeading {
   @include visually-hidden;
+}
+
+.description {
+  &:first-of-type {
+    margin-bottom: 1.5rem;
+  }
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .list {
@@ -78,14 +91,7 @@
       }
     }
   }
-
-  .description & {
-    + .list  {
-    list-style-type: disc;
-  }
-  }
 }
-
 
 .job {
   margin-bottom: 1.5rem;
