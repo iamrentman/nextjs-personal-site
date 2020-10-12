@@ -77,6 +77,14 @@ export default function Layout({ children, home, contentClass }) {
             </a>
           </li>
           <li>
+            <a href="https://www.drupal.org/u/iamrentman">
+              <span className={styles.iconText}>Check out my Drupal.org profile</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.319 31.775" focusable="false" aria-hidden="true" className={classnames( styles.iconSocial, styles.iconDrupal)}>
+                <path d="M17.163 6.768C14.927 4.533 12.794 2.4 12.159 0c-.635 2.4-2.768 4.533-5 6.768C3.8 10.119 0 13.917 0 19.613a12.159 12.159 0 1024.319 0c0-5.7-3.8-9.494-7.156-12.845M5.168 22.447c-.746-.025-3.5-4.768 1.607-9.818l3.378 3.69a.289.289 0 01-.023.431c-.806.827-4.242 4.272-4.669 5.463-.088.246-.217.237-.294.234m6.992 6.253a4.182 4.182 0 01-4.182-4.182 4.358 4.358 0 011.043-2.765c.754-.922 3.139-3.515 3.139-3.515s2.348 2.631 3.133 3.507a4.09 4.09 0 011.049 2.771A4.182 4.182 0 0112.16 28.7m8-6.782c-.09.2-.295.526-.571.536-.492.018-.544-.234-.908-.772-.8-1.181-7.764-8.462-9.067-9.87-1.146-1.238-.161-2.111.3-2.569C10.486 8.667 12.159 7 12.159 7s4.988 4.732 7.065 7.966a7.448 7.448 0 01.939 6.955"/>
+              </svg>
+            </a>
+          </li>
+          <li>
             <a href="https://github.com/iamrentman">
               <span className={styles.iconText}>Check out my contributions on GitHub</span>
               <svg viewBox="0 0 32.579 31.775" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true" className={classnames( styles.iconSocial, styles.iconGitHub)}>
