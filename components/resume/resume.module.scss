@@ -8,14 +8,14 @@
   font-family: 'Literata', serif;
   letter-spacing: -0.0125rem;
 
-  a {
-    color: $color-dark-water;
-  }
+  // a {
+  //   color: $color-dark-water;
+  // }
 
-  @media (prefers-color-scheme: dark) {
-    background: $color-white;
-    color: $color-night-sky;
-  }
+  // @media (prefers-color-scheme: dark) {
+  //   background: $color-white;
+  //   color: $color-night-sky;
+  // }
 }
 
 .pageTitle {
