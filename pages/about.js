@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Layout from '../components/layout/layout'
 import About from '../data/about.mdx'
 import styles from '../components/resume/resume.module.scss'
+import postStyles from '../global/posts.module.scss'
 import {MDXProvider} from '@mdx-js/react'
 
 const h1 = props => <h1 className={styles.pageTitle} {...props} />
@@ -30,7 +31,9 @@ export default function Resume() {
         <title>Justin Rent, Developer & Designer — About me</title>
       </Head>
       <MDXProvider components={components}>
-        <About />
+        <section className={postStyles.content}>
+          <About />
+        </section>
       </MDXProvider>
     </Layout>
   )
