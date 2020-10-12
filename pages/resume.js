@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Layout from '../components/layout/layout'
 import Contact from '../data/resume/contact.mdx'
 import Experience from '../data/resume/experience.mdx'
+import utilStyles from '../global/utils.module.scss'
 import styles from '../components/resume/resume.module.scss'
 import {MDXProvider} from '@mdx-js/react'
 
@@ -30,6 +31,7 @@ export default function Resume() {
       <Head>
         <title>Justin Rent, Developer & Designer — Resumé</title>
       </Head>
+      <h1 className={utilStyles.headingXl}>Professional Background</h1>
       <p className={styles.intro}>I am a Developer & Designer with an MBA who is inspired by big ideas, meaningful projects, meticulous user-centered design, and the collaborative nature of diverse, inclusive, open source focused development teams.</p>
       <p className={styles.intro}>My professional career is rooted in design with a constant curiosity for technology and an interest in improving business. As a developer, I've found a sweet spot where I'm well equipped to collaborate closely with strategists and designers to ensure that their work is accurately translated to the browser and results in engaging user experiences. Day-to-day, modern development tools and the development team workflow are where I find myself most engaged.</p>
       <MDXProvider components={components}>
