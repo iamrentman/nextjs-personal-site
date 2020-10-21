@@ -7,7 +7,6 @@ import postStyles from '../../global/posts.module.scss'
 
 
 export default function Post({ contentData }) {
-  console.log(contentData);
   return (
     <Layout>
       <Head>
