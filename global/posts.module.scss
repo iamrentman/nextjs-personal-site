@@ -80,4 +80,13 @@
   ol li {
     margin-bottom: 12px;
   }
+
+  blockquote {
+    margin-bottom: 1.5rem;
+    padding: 0 0 20px 24px;
+    border-left: 4px solid;
+    font-size: calc(100% + .8vw);
+    font-style: italic;
+    opacity: 0.8;
+  }
 }

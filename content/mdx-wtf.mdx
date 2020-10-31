@@ -1,0 +1,19 @@
+---
+title: 'MDX? WTF?'
+date: '2020-10-17'
+---
+
+One of my favorite things about web development is that most things you want or need to learn are so well documented that if you have the time and interest you can level up your skills considerably with a few hours of focused time. I started the setup of this site by running through the [Next.js basic setup tutorial](https://nextjs.org/learn/basics/create-nextjs-app), which was well explained and rather straightforward. Got me up and running pretty quickly.
+
+This initial setup gives you a way to dynamically route blog posts created in markdown files and a homepage example that is a simple `index.js` file with a `.map()` method for displaying the titles and dates of your posts. The post markdown files are then rendered using `remark` which parses and serializes the information in the `.md` files. This is common and works really well. As I started to add content and try to add classes for styling and break up the pages in to components, though, I started to feel like I needed a little more control of the markup I was getting. Well, that's where [MDX](https://mdxjs.com/) comes in!
+
+The MDX docs say
+> MDX is an authorable format that lets you seamlessly write JSX in your Markdown documents.
+
+If you're in to React and familiar with JSX this is super cool.
+
+```
+    Test code block
+    <p></p>
+    <h2></h2>
+```
