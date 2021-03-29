@@ -1,0 +1,13 @@
+---
+title: 'Upgrade! Next.js 10'
+date: '2020-11-01'
+---
+
+Today I upgraded to the latest version of Next.js. Version 10 was released October 27, 2020 and comes with some great [new features and upgrades to almost everything](https://nextjs.org/blog/next-10) from i18n to commerce to analytics to React 17 support to CSS importing from npm packages. The thing I was most eager to upgrade for, however, is the new [`` `next/image` ``](https://nextjs.org/blog/next-10#built-in-image-component-and-automatic-image-optimization) component and built-in image optimization. :tada:
+
+Since getting started on this project, I have somewhat avoided images. I knew Next didn't have a built-in image solution like Gatsby has had for a while now, but also knew there was pretty popular [next-optimized-images](https://www.npmjs.com/package/next-optimized-images) npm package for previous versions that I could try and set up when the need arose. I haven't been too concerned yet about adding images to the content so I put that on the TO DO list and moved on.
+
+Well, glad I didn't spend any time on that! This new image component is really so simple to use and it "just works." You simply import `` `next/image` `` at the top of the file, like any other component, and add the `<Image />` to your JSX with a set of props that help you optimize the user experience.
+
+- `width` and `height`: When you add values for *both* of these props, the proper space for the image(s) will be alloted for the image in the page layout as the elements render, avoiding any content jumps as the images load to the browser. You should pass the intrinsic width and height of the original image as unit-less integers. Unlike the `<img>` HTML element itself, these values will not restrict the responsiveness of the image but instead make them responsive based on the aspect ratio of the 2 values.
+- `` `loading` ``: The default value is 'lazy' which instructs modern browsers to wait to start loading the image until the user has scrolled to a certain distance before it. This helps reduce initial page load times and allows users to access content faster. Paired with values for the width and height mentioned above, images will load only as the become necessary based on user interaction and the content will not jump around as these images are loaded when the user is scrolling.
